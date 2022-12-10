@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webchat</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    
+        
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <button class="popup" onclick="myFunction()">Invite
+        <span class="popuptext" id="myPopup">Link copied to clipboard</span>
+    </button>
+    <nav>
+        <img class="logo" src="logo.png" alt="">
+        <div class="header"> Group chat</div>
+    </nav>
+    
+    <div class="container"id="00">
+        <!-- <div class = "message center">Hey</div> -->
+     
+
+    </div>
+    
+    <div class="send">
+        <form action="#" id="send-container">
+            
+        <input type="text" name="msgipt" id="msgipt">
+        <button class="btn" type="submit">></button>
+
+        </form>
+    </div>
+    <div id="memTitle">Members</div>
+    <div class="showmember">
+        
+        <!-- <div class= "mem">aniket</div> -->
+     
+
+    </div>
+    <div class="share">
+        You can share the invite link to add your friend     
+
+    </div>
+</body>
+</html>

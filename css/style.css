@@ -1,0 +1,333 @@
+
+nav{
+  display: flex;
+  margin-top: -160px;
+}
+.logo{
+    margin-left: 35%;
+    height: 150px;
+    margin-bottom: -25px;
+}
+.header{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+    margin-left: -60px;
+    margin-bottom: -25px;
+    color: rgb(190, 255, 254);
+    font-size: 290%;
+}
+body{
+    /* background-color: rgba(0, 0, 0, 0.827); */
+    background-image: url('bg.jpg');
+}
+.container {
+    
+   max-width: 885px;
+   background-color: rgba(26, 26, 142, 0.118);
+ border-radius: 10px;
+   border: 2px solid black;
+    margin:auto;
+    height: 60vh;
+    padding: 33px;
+    overflow-y: auto;
+    margin-bottom: 23px;
+    
+}
+
+.message{
+
+    background-color: antiquewhite;
+    width: 24%;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px;
+    margin: 17px 12px;
+    border: 1.5px solid rgb(30, 20, 20);
+    border-radius: 10px;
+}
+
+.left{
+    float: left;
+    clear: both;
+}
+.right{
+    float: right;
+    clear: both;
+}
+.center{
+  background-color: rgba(250, 235, 215, 0.745);
+  border: 1.5px solid rgba(34, 29, 24, 0.91);
+
+    text-align: center;
+    font-size: 16px;
+    padding: 3.5px;
+    margin: auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    clear: both;
+}
+#send-container{
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 985px;
+    width: 100%;
+}
+
+#msgipt{
+    width: 92%;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 34px;
+}
+
+.btn{
+    background-color: rgb(236, 142, 142);
+    cursor: pointer;
+    font-size: larger;
+    color:rgb(42, 0, 254);
+     border-radius: 20px;
+    border: 2px solid black;
+    width: 40px;
+    height: 40px;
+
+}
+#memTitle{
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-left: 85%;
+  margin-top: -37.3%;
+  font-size: x-large;
+  text-align: center;
+  background-color: rgba(99, 134, 177, 0.151);
+  color: rgb(239, 238, 243);
+  max-width: 10%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.showmember {
+  background-color: rgba(99, 134, 177, 0.151);
+  color: rgb(239, 238, 243);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  float: right;
+    font-size: 150%;
+    min-width: 8.6%;
+  max-width: 128px;
+ border-radius: 10px;
+  border: 2px solid black;
+  margin-right: 4.9%;
+  min-height: 485px;
+  margin-top: 1%;
+   padding: 10px;
+   overflow-y: auto;
+   margin-bottom: 23px;
+}
+.share{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  color: rgba(255, 255, 255, 0.534);
+  font-size: xx-large;
+  max-width: 150px;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 3%;
+  line-height: 200%;
+}
+
+
+
+/* Popup container */
+.popup {
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(83, 47, 128);
+  border-radius: 20%;
+  text-decoration: solid;
+  font-size:x-large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgba(0, 255, 255, 0.649);
+  margin-left: 90px;
+   position: relative;
+   display: inline-block;
+   cursor: pointer;
+   margin-top: 120px;
+
+ }
+.popup:hover {
+  border-color: rgba(83, 47, 128, 0.747);
+ }
+ 
+ /* The actual popup (appears on top) */
+ .popup .popuptext {
+   visibility: hidden;
+   width: 160px;
+   background-color: #555;
+   color: #fff;
+   font-size: small;
+   text-align: center;
+   border-radius: 6px;
+   padding: 8px 0;
+   position: absolute;
+   z-index: 1;
+   bottom: 125%;
+   left: 50%;
+   margin-left: -80px;
+ }
+ 
+ /* Popup arrow */
+ .popup .popuptext::after {
+   content: "";
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   margin-left: -5px;
+   border-width: 5px;
+   border-style: solid;
+   border-color: #555 transparent transparent transparent;
+ }
+ 
+ /* Toggle this class when clicking on the popup container (hide and show the popup) */
+ .popup .show {
+   visibility: visible;
+   -webkit-animation: fadeIn 1s;
+   animation: fadeIn 1s
+ }
+ 
+ /* Add animation (fade in the popup) */
+ @-webkit-keyframes fadeIn {
+   from {opacity: 0;}
+   to {opacity: 1;}
+ }
+ 
+ @keyframes fadeIn {
+   from {opacity: 0;}
+   to {opacity:1 ;}
+ }
+
+
+
+ /* /////////////////////// */
+ @media only screen and (max-width: 375px) {
+  nav{
+    display: flex;
+    
+  }
+  .logo{
+      margin-left: 0%;
+      height: 130px;
+      margin-top: 100px;
+  }
+  .header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-top: 140px;
+      margin-left: -60px;
+      margin-bottom: -25px;
+      color: rgb(190, 255, 254);
+      font-size: 200%;
+  }
+  body{
+      /* background-color: rgba(0, 0, 0, 0.827); */
+      background-image: url('bg.jpg');
+  }
+  .container {
+      
+     max-width: 250px;
+     margin-left: 15px;
+     background-color: rgba(26, 26, 142, 0.118);
+     border-radius: 10px;
+     border: 2px solid black;
+    height: 60vh;
+    padding: 33px;
+    overflow-y: auto;
+    margin-bottom: 23px;
+      
+  }
+  
+  .message{
+      overflow-y: hidden;
+      background-color: antiquewhite;
+      min-width: 60%;
+      font-size: large;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      padding: 2px;
+      margin: 1px -20px;
+      margin-bottom: 15px;
+      border: 1.5px solid rgb(30, 20, 20);
+      border-radius: 10px;
+  }
+  
+  .left{
+      float: left;
+      clear: both;
+  }
+  .right{
+      float: right;
+      clear: both;
+  }
+  .center{
+    background-color: rgba(250, 235, 215, 0.745);
+    border: 1.5px solid rgba(34, 29, 24, 0.91);
+  
+      text-align: center;
+      font-size: 16px;
+      padding: 3.5px;
+      margin: auto;
+      margin-top: 17px;
+      margin-bottom: 17px;
+      clear: both;
+  }
+  #send-container{
+      display: block;
+      margin: auto;
+      margin-left: 15px;
+      text-align: center;
+      max-width: 275px;
+      width: 100%;
+  }
+  
+  #msgipt{
+    float: left;
+    margin: 0px;
+      width: 95%;
+      border: 2px solid black;
+      border-radius: 6px;
+      height: 31px;
+  }
+  
+  .btn{
+
+margin-right: -60px;
+font-size: large;
+ border-radius: 20px;
+border: 2px solid black;
+width: 40px;
+height: 40px;
+
+      /* margin-left: 280px; */
+  
+  }
+  #memTitle{
+    display: none;
+
+  }
+  .showmember {
+    display: none;
+  }
+  .share{
+    display: none;
+  }
+  
+  .popup {
+    padding: 1px;
+    
+   font-size: 17px;
+  margin-left: 10px;
+  margin-top: 20px;
+   }
+   .popup .popuptext {
+    
+    max-width: 200px;
+   margin-left: -50px;
+   margin-top: 80px;
+  }
+}
