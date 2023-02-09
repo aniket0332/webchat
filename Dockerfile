@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt-get update
-RUN spt-get -y install nginx
+RUN apt-get -y install nginx
 
 COPY index.html /var/www/html/index.html
 
