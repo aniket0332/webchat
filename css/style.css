@@ -1,20 +1,58 @@
+.logo_head{
 
-nav{
   display: flex;
-  margin-top: -160px;
+  align-items: center;
+    justify-content: center;
+  padding: 1%;
+  padding-right: 10%;
+}
+.main_body{
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+.center_body{
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.navigation{
+  height: 150px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 20% 60% 20%;
+}
+.share{
+  /* height: 10px; */
+  padding: 20%;
+  margin-top: 29%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(255, 255, 255, 0.534);
+  font-size: 230%;
+  /* max-width: 150px; */
+  text-align: center;
+  /* margin-top: 5%;
+  margin-left: 3%; */
+  /* line-height: 200%; */
 }
 .logo{
-    margin-left: 35%;
-    height: 150px;
-    margin-bottom: -25px;
+      
+     height: 27%;
+     width: 27%;
+     
 }
 .header{
+  margin-left: -7%;
+  /* margin-top: 50px; */
+  /* margin-left: -70px; */
+  /* padding: 5%; */
+  font-size: 200%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 50px;
-    margin-left: -60px;
-    margin-bottom: -25px;
+    /* margin-top: 50px;
+    margin-left: -60px; */
+    /* margin-bottom: -25px; */
     color: rgb(190, 255, 254);
-    font-size: 290%;
+    
 }
 body{
     /* background-color: rgba(0, 0, 0, 0.827); */
@@ -22,16 +60,14 @@ body{
 }
 .container {
     
-   max-width: 885px;
+   /* min-width: 259%; */
    background-color: rgba(26, 26, 142, 0.118);
- border-radius: 10px;
+ border-radius: 30px;
    border: 2px solid black;
-    margin:auto;
+   /* / margin:auto; */
     height: 60vh;
-    padding: 33px;
     overflow-y: auto;
-    margin-bottom: 23px;
-    
+      
 }
 
 .message{
@@ -40,10 +76,10 @@ body{
     width: 24%;
     font-size: larger;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 5px;
-    margin: 17px 12px;
+    padding: 0.9%;
+    margin: 17px 15px;
     border: 1.5px solid rgb(30, 20, 20);
-    border-radius: 10px;
+    border-radius: 18px;
 }
 
 .left{
@@ -66,22 +102,26 @@ body{
     margin-bottom: 17px;
     clear: both;
 }
+
 #send-container{
-    display: block;
-    margin: auto;
+  padding-top: 3%;
+    /* display: block; */
+    /* margin: auto; */
     text-align: center;
-    max-width: 985px;
-    width: 100%;
 }
 
 #msgipt{
-    width: 92%;
+  
+  margin-left: -0.53%;
+
+    width: 91%;
     border: 2px solid black;
-    border-radius: 6px;
+    border-radius: 17px;
     height: 34px;
 }
 
 .btn{
+  margin-left: 1%;
     background-color: rgb(236, 142, 142);
     cursor: pointer;
     font-size: larger;
@@ -92,47 +132,45 @@ body{
     height: 40px;
 
 }
+.right_body{
+  padding-left: 5%;
+  padding-right: 15%;
+}
 #memTitle{
-  border-radius: 10px;
+  padding: 3%;
+  margin-bottom: 7%;
+  border-radius: 20px;
   border: 2px solid black;
-  margin-left: 85%;
-  margin-top: -37.3%;
-  font-size: x-large;
+  /* margin-left: 2%; */
+  /* margin-top: -37.3%; */
+  /* margin-top: 0px; */
+  font-size: 150%;
   text-align: center;
   background-color: rgba(99, 134, 177, 0.151);
   color: rgb(239, 238, 243);
-  max-width: 10%;
+  /* max-width: 10%; */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+  
 }
 .showmember {
+  padding: 7%;
   background-color: rgba(99, 134, 177, 0.151);
   color: rgb(239, 238, 243);
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  float: right;
+  /* float: right; */
     font-size: 150%;
-    min-width: 8.6%;
-  max-width: 128px;
- border-radius: 10px;
+    /* min-width: 8.6%; */
+  /* max-width: 128px; */
+ border-radius: 20px;
   border: 2px solid black;
-  margin-right: 4.9%;
-  min-height: 485px;
-  margin-top: 1%;
-   padding: 10px;
+  /* margin-right: 4.9%; */
+  min-height: 392px;
+  /* margin-top: 1%; */
+   /* padding: 10px; */
    overflow-y: auto;
    margin-bottom: 23px;
 }
-.share{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-  color: rgba(255, 255, 255, 0.534);
-  font-size: xx-large;
-  max-width: 150px;
-  text-align: center;
-  margin-top: 5%;
-  margin-left: 3%;
-  line-height: 200%;
-}
 
 
 
@@ -143,14 +181,16 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border-color: rgb(83, 47, 128);
   border-radius: 20%;
   text-decoration: solid;
-  font-size:x-large;
+  /* max-width: 120%; */
+  font-size: 150%;
+  height: 10%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: rgba(0, 255, 255, 0.649);
-  margin-left: 90px;
-   position: relative;
-   display: inline-block;
+  /* margin-left: 90px; */
+   /* position: relative; */
+   /* display: inline-block; */
    cursor: pointer;
-   margin-top: 120px;
+   /* margin-top: 120px; */
 
  }
 .popup:hover {
@@ -206,54 +246,74 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 
 
+.rightbar{
+  display: none;
+}
+
+
  /* /////////////////////// */
- @media only screen and (max-width: 375px) {
-  nav{
-    display: flex;
-    
+
+
+
+
+
+
+ @media only screen and (max-width: 500px) {
+ 
+
+  .logo_head{
+   margin-top: -10%;
+   
   }
   .logo{
-      margin-left: 0%;
-      height: 130px;
-      margin-top: 100px;
+   height: 100px;
+   width: 150px;
   }
   .header{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      margin-top: 140px;
-      margin-left: -60px;
-      margin-bottom: -25px;
-      color: rgb(190, 255, 254);
-      font-size: 200%;
+  margin-left: -17%;
+  font-size: 160%;
   }
-  body{
-      /* background-color: rgba(0, 0, 0, 0.827); */
-      background-image: url('bg.jpg');
+  .popup {
+    margin-top: -10px;
+    border-width: 5px;
+    font-size: 120%;
+   }
+  .main_body{
+    margin-top: -40px;
+    display: grid;
+    grid-template-columns: 100%;
   }
+  .center_body{
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  
+  .navigation{
+    height: 150px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 20% 60% 20%;
+  }
+  .share{
+    display: none;
+  }
+  
   .container {
       
-     max-width: 250px;
-     margin-left: 15px;
-     background-color: rgba(26, 26, 142, 0.118);
-     border-radius: 10px;
-     border: 2px solid black;
-    height: 60vh;
-    padding: 33px;
-    overflow-y: auto;
-    margin-bottom: 23px;
-      
+      height: 70vh;
+        
   }
   
   .message{
-      overflow-y: hidden;
-      background-color: antiquewhite;
-      min-width: 60%;
-      font-size: large;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      padding: 2px;
-      margin: 1px -20px;
-      margin-bottom: 15px;
-      border: 1.5px solid rgb(30, 20, 20);
-      border-radius: 10px;
+  
+      max-width: 34%;
+      font-size: 103%;
+      padding: 0.9%;
+      padding-left: 2%;
+      margin: 17px 15px;
+      overflow: auto;
+     
   }
   
   .left{
@@ -265,9 +325,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       clear: both;
   }
   .center{
-    background-color: rgba(250, 235, 215, 0.745);
-    border: 1.5px solid rgba(34, 29, 24, 0.91);
-  
+      width: 44%;  
       text-align: center;
       font-size: 16px;
       padding: 3.5px;
@@ -276,58 +334,206 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       margin-bottom: 17px;
       clear: both;
   }
+  
   #send-container{
-      display: block;
-      margin: auto;
-      margin-left: 15px;
+    padding-top: 3%;
+      /* display: block; */
+      /* margin: auto; */
       text-align: center;
-      max-width: 275px;
-      width: 100%;
   }
   
   #msgipt{
-    float: left;
-    margin: 0px;
-      width: 95%;
+    
+    margin-left: -0.53%;
+  
+      width: 85%;
       border: 2px solid black;
-      border-radius: 6px;
-      height: 31px;
+      border-radius: 17px;
+      height: 34px;
   }
   
   .btn{
-
-margin-right: -60px;
-font-size: large;
- border-radius: 20px;
-border: 2px solid black;
-width: 40px;
-height: 40px;
-
-      /* margin-left: 280px; */
+    margin-left: 1%;
+      background-color: rgb(236, 142, 142);
+      cursor: pointer;
+      font-size: larger;
+      color:rgb(42, 0, 254);
+       border-radius: 20px;
+      border: 2px solid black;
+      width: 40px;
+      height: 40px;
   
+  }
+  .right_body{
+    display: none;
+    /* padding-left: 5%;
+    padding-right: 15%; */
   }
   #memTitle{
-    display: none;
-
+    padding: 3%;
+    margin-bottom: 7%;
+    border-radius: 20px;
+    border: 2px solid black;
+    /* margin-left: 2%; */
+    /* margin-top: -37.3%; */
+    /* margin-top: 0px; */
+    font-size: 150%;
+    text-align: center;
+    background-color: rgba(99, 134, 177, 0.151);
+    color: rgb(239, 238, 243);
+    /* max-width: 10%; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
   }
   .showmember {
-    display: none;
-  }
-  .share{
-    display: none;
+    padding: 7%;
+    background-color: rgba(99, 134, 177, 0.151);
+    color: rgb(239, 238, 243);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* float: right; */
+      font-size: 150%;
+      /* min-width: 8.6%; */
+    /* max-width: 128px; */
+   border-radius: 20px;
+    border: 2px solid black;
+    /* margin-right: 4.9%; */
+    min-height: 392px;
+    /* margin-top: 1%; */
+     /* padding: 10px; */
+     overflow-y: auto;
+     margin-bottom: 23px;
   }
   
-  .popup {
-    padding: 1px;
-    
-   font-size: 17px;
-  margin-left: 10px;
-  margin-top: 20px;
-   }
-   .popup .popuptext {
-    
-    max-width: 200px;
-   margin-left: -50px;
-   margin-top: 80px;
+  
+  .rightbar{
+    display: initial;
   }
+  /* The sidebar menu */
+  .sidebar {
+    display: none;
+    /* padding: 0%; */
+    /* margin-bottom: 7%; */
+    border-radius: 20px;
+    border: 2px solid black;
+    /* margin-left: 2%; */
+    /* margin-top: -37.3%; */
+    /* margin-top: 0px; */
+    max-width: 30%;
+    font-size: 150%;
+    text-align: left;
+    background-color: rgba(72, 127, 139, 0.97);
+    /* color: rgb(239, 238, 243); */
+    /* max-width: 10%; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+   height: 65%; /* 100% Full-height*/
+     width: 0; /*0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    margin-top: 120px;
+    top: 0;
+    right: 0;
+   /* background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+ 
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 3%;
+    margin-left: 13%;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidebar .sideb {
+    margin-left: 7%;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+
+  
+  /* Position and style the close button (top right corner) */
+  /* .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  } */
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    margin-top: -10px;
+    /* margin-left: -0%; */
+    border-width: 5px;
+    border-style: solid;
+  border-width: 5px;
+  border-color: rgba(238, 137, 60, 0.46);
+  border-radius: 20%;
+  /* text-decoration: solid; */
+  /* max-width: 120%; */
+  font-size: 110%;
+  /* height: 10%; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgba(0, 255, 255, 0.649);
+
+    /* font-size: 20px; */
+    cursor: pointer;
+    /* background-color: rgba(137, 190, 213, 0.745); */
+    /* color:black; */
+    /* padding: 10px 15px; */
+    /* border: none; */
+  }
+  
+
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 425px) {
+  #msgipt{
+    width: 83%;
+  }
+  .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+@media only screen and (max-width: 377px) {
+  #msgipt{
+    width: 80%;
+  }
+  .message{
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 322px) {
+  .message{
+    font-size: 90%;
+    width: 44%;
+  }
+  
+  #msgipt{
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 260px) {
+  #msgipt{
+    width: 70%;
+  }
+  .popup {
+    margin-top: -10px;
+    border-width: 2px;
+    font-size: 100%;
+   }
 }

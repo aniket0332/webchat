@@ -3,6 +3,8 @@ const socket =io('http://localhost:8000');
 const form = document.getElementById('send-container');
 const messageInput = document.getElementById('msgipt');
 const memberbox = document.querySelector('.showmember') 
+const memberbox1 = document.querySelector('.sideb') 
+
 const messageContainer = document.querySelector('.container') 
 var audio = new Audio('chattone.mp3');
 var audio0 = new Audio('sentmessage.mp3');
@@ -53,7 +55,20 @@ if(position=='member')
         const messageElement0 = document.createElement('div');
     messageElement0.innerText = `• `+users[i];
         messageElement0.classList.add('mem');
+
         memberbox.append(messageElement0);
+}
+
+while (memberbox1.hasChildNodes()) {
+  memberbox1.removeChild(memberbox1.firstChild);
+} 
+  for(let i in users)
+  {
+      const messageElement1 = document.createElement('div');
+  messageElement1.innerText = `• `+users[i];
+      messageElement1.classList.add('sideb');
+
+      memberbox1.append(messageElement1);
 }
 }
 
@@ -65,7 +80,7 @@ if(position=='member')
 form.addEventListener(`submit`, (e)=>{
     e.preventDefault();
     const message = messageInput.value;
-    append(`You: ${message}`, `right`);
+    append(`You: ${ message}`, `right`);
     socket.emit(`send`, message);
     messageInput.value = '';
 })
@@ -92,3 +107,26 @@ socket.on('left', name =>{
     socket.emit('member-update', '');
     
 })
+var state=0;
+function toggleNav() {
+if(state==0)
+{state=1;openNav();}
+else {state=0;closeNav();}
+}
+
+/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.display = "initial";
+  document.getElementById("mySidebar").style.border = "2px solid black";
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "25px";
+
+  }
+  
+  /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("mySidebar").style.border = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    // document.getElementById("mySidebar").style.display = "none";
+  }
