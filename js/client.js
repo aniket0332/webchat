@@ -1,4 +1,4 @@
-const socket =io('https://webchat-app2.onrender.com');
+const socket =io('http://localhost:8000');
 
 const form = document.getElementById('send-container');
 const messageInput = document.getElementById('msgipt');
