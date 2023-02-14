@@ -71,14 +71,16 @@ body{
 }
 
 .message{
-
+    
     background-color: antiquewhite;
-    width: 24%;
+    max-width: 24%;
     font-size: larger;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 0.9%;
+    padding-right: 3%;
     margin: 17px 15px;
     border: 1.5px solid rgb(30, 20, 20);
+    overflow-x: hidden;
     border-radius: 18px;
 }
 
