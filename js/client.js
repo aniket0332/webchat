@@ -1,4 +1,13 @@
+const loadingScreen = document.createElement('div');
+loadingScreen.className = 'loading-screen';
+loadingScreen.innerHTML = '<div class="loading-text">Connecting...</div>';
+document.body.appendChild(loadingScreen);
+
 const socket =io('https://webchat-backend-dt52.onrender.com');
+
+socket.on('connect', () => {
+    loadingScreen.remove();
+});
 
 const form = document.getElementById('send-container');
 const messageInput = document.getElementById('msgipt');
