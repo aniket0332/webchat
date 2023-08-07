@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,65 +8,68 @@
     <title>Webchat</title>
     <script defer src="https://webchat-backend-dt52.onrender.com/socket.io/socket.io.js"></script>
     <script defer src="js/client.js"></script>
-    
-        
+
+
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
-    
+<body>
+    <div class="loading-screen">
+        <div class="loading-text">Connecting...</div>
+    </div>
     <nav class="navigation">
-       <div> <button class="popup" onclick="myFunction()">Invite
-            <span class="popuptext" id="myPopup">Link copied to clipboard</span>
-        </button>
-    </div>
-    <div class="logo_head">
-        <img class="logo" src="logo.png" alt="">
-        <div class="header"> Group chat</div>
-    </div>
-    <div class = "rightbar">
-        <div id="mySidebar" class="sidebar">
-            <div class="sideb"></div>
-          </div>
-          
-          <div id="main">
-            <button class="openbtn" onclick="toggleNav()"> Members</button>
-          </div>
+        <div> <button class="popup" onclick="myFunction()">Invite
+                <span class="popuptext" id="myPopup">Link copied to clipboard</span>
+            </button>
         </div>
-    <div></div>
+        <div class="logo_head">
+            <img class="logo" src="logo.png" alt="">
+            <div class="header"> Group chat</div>
+        </div>
+        <div class="rightbar">
+            <div id="mySidebar" class="sidebar">
+                <div class="sideb"></div>
+            </div>
+
+            <div id="main">
+                <button class="openbtn" onclick="toggleNav()"> Members</button>
+            </div>
+        </div>
+        <div></div>
     </nav>
     <main class="main_body">
         <div class="share">
-            You can share the invite link to add your friend     
-    
+            You can share the invite link to add your friend
+
         </div>
         <div class="center_body">
-    <div class="container"id="00">
-        <!-- <div class = "message center">Hey</div> -->
-     
+            <div class="container" id="00">
+                <!-- <div class = "message center">Hey</div> -->
 
-    </div>
- 
-    <div class="send">
-        <form action="#" id="send-container">
-            
-        <input type="text" name="msgipt" id="msgipt">
-        <button class="btn" type="submit">></button>
 
-        </form>
-    </div>
+            </div>
+
+            <div class="send">
+                <form action="#" id="send-container">
+
+                    <input type="text" name="msgipt" id="msgipt">
+                    <button class="btn" type="submit">></button>
+
+                </form>
+            </div>
         </div>
-      
-  <div class="right_body">  
-       <div id="memTitle">Members</div>
-        <div class="showmember">
-            
-            <!-- <div class= "mem">aniket</div> -->
-         
-    
+
+        <div class="right_body">
+            <div id="memTitle">Members</div>
+            <div class="showmember">
+
+                <!-- <div class= "mem">aniket</div> -->
+
+
+            </div>
         </div>
-    </div>
-   
-</main>
+
+    </main>
 </body>
+
 </html>
