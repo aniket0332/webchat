@@ -1,7 +1,4 @@
-const loadingScreen = document.createElement('div');
-loadingScreen.className = 'loading-screen';
-loadingScreen.innerHTML = '<div class="loading-text">Connecting...</div>';
-document.body.appendChild(loadingScreen);
+const loadingScreen = document.getElementsByClassName('loading-screen')[0]; 
 
 const socket =io('https://webchat-backend-dt52.onrender.com');
 
@@ -23,6 +20,7 @@ function delay(){
   popup.classList.remove("show");
 }
 
+
 function myFunction() {
     // Get the text field
     var copyText = "https://aniket0332.github.io/webchat/";
@@ -40,9 +38,11 @@ function myFunction() {
   }
 
 const append = (message, position, users)=>{
-
+    if(message=="")
+    return 0;
     if(position!='member')
-   {const messageElement = document.createElement('div');
+   {
+   const messageElement = document.createElement('div');
    messageElement.innerText = message;
    messageElement.classList.add('message');
    messageElement.classList.add(position);
@@ -80,14 +80,11 @@ while (memberbox1.hasChildNodes()) {
       memberbox1.append(messageElement1);
 }
 }
-
 const el = document.getElementById('00');
 if (el) {
   el.scrollTop = el.scrollHeight;
 }
 }
-
-
 
 form.addEventListener(`submit`, (e)=>{
     e.preventDefault();
